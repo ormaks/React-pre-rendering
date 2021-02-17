@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>
+        Pre-render app
+    </title>
+    <meta
+            name="description"
+            content="Pre-render app description"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon-16x16.png" sizes="16x16"/>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" sizes="32x32"/>
+    <link rel="shortcut icon" href="images/android-chrome-192x192.png" sizes="192x192"/>
+    <link rel="shortcut icon" href="images/android-chrome-512x512.png" sizes="512x512"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="manifest" href="manifest.json"/>
+
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NLNDPHS");
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-180653076-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "UA-180653076-1");
+    </script>
+</head>
+
+<body aria-hidden="true">
+<noscript
+>
+    <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NLNDPHS"
+            height="0"
+            width="0"
+            style="display: none; visibility: hidden"
+    ></iframe
+    >
+</noscript>
+<div id="root"></div>
+
+<style>
+    .rc-anchor-light.rc-anchor-normal {
+        border: none !important;
+    }
+
+    .rc-anchor-light {
+        background-color: unset !important;
+    }
+
+    .rc-anchor {
+        border-radius: unset !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+</style>
+
+<script>
+  /*<![CDATA[*/
+  (function (w, a, b, d, s) {
+    w[a] = w[a] || {};
+    w[a][b] = w[a][b] || {
+      q: [],
+      track: function (r, e, t) {
+        this.q.push({r: r, e: e, t: t || +new Date()});
+      },
+    };
+    var e = d.createElement(s);
+    var f = d.getElementsByTagName(s)[0];
+    e.async = 1;
+    e.src =
+      "//marketing.parkhouseresidences.com/cdnr/forpci2/acton/bn/tracker/43478";
+    f.parentNode.insertBefore(e, f);
+  })(window, "ActOn", "Beacon", document, "script");
+  ActOn.Beacon.track(); /*]]>*/
+</script>
+</body>
+</html>
