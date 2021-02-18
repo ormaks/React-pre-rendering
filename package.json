@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "postbuild": "react-snap"
   },
   "repository": {
     "type": "git"
@@ -23,21 +24,24 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
+    "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^4.2.2",
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.0",
+    "react-router-dom": "^5.2.0",
+    "react-snap": "^1.23.0",
     "style-loader": "^1.2.1",
+    "styled-components": "^5.1.1",
     "tslint": "^6.1.3",
     "tslint-immutable": "^6.0.1",
     "typescript": "^4.0.2",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "styled-components": "^5.1.1"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "@types/react": "^16.9.48",
